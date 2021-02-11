@@ -1,145 +1,231 @@
-/* mobile */
+html {
+    scroll-behavior: smooth;
+  }
 
-@media (min-width: 340px) {
-    h1 {
-        font-size: 1.2rem;
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #A28089;
+}
+
+
+@media only screen and (min-width: 320px) {
+    nav {
+        background-color: #A28089;
+        padding-top: 0.001rem;
+        display: flex;
+        flex-direction: column;
+        color: white;
     }
 
-    h2 {
-        padding-top: 5%;
-        font-size: 1.7rem;
+    .name-top {
+        display: none;
+    }
+
+    .nav-items {
+        display: none;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: white;
+    }
+
+    a:hover {
+        color: #F9F295;
+    }
+
+    /* sandwich button */
+    .respmenu a { 
+        color: inherit;
+        text-decoration: none;
+        display: block;
+        padding: 10px 20px;
+        border-bottom: 2px solid #A28089;
+        max-width: 200px;
+        background: #A28089;
+      }
+
+      .respmenu a:hover {
+        color: #F9F295;
+      }
+
+      .respmenu li {
+          list-style-type: none;
+      }
+
+      .respmenu h1 {
+          text-align: center;
+      }
+
+      .respmenu input[type="checkbox"], .respmenu .fa-bars, .respmenu .fa-times {
+        position: absolute;  
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        right: 0;
+        top: 10px;
+        width: 48px;
+        height: 48px;  
+      }
+       
+      .respmenu .fa-bars, .respmenu .fa-times {
+        font-size: 48px;
+        pointer-events: none;
+      }
+       
+      .respmenu input[type="checkbox"] {
+        opacity: 0; 
+      }
+       
+      .respmenu {
+        color: white;
+        position: relative; 
+        background: #A28089;
+        min-height: 48px;
+      }
+       
+      .respmenu nav {
+        display: none;
+      }
+       
+      .respmenu input:checked ~ nav {
+        display: block;
+      }
+       
+      .respmenu input:checked ~ .fa-bars {
+        display: none;
+      }
+       
+      .respmenu input:not(:checked) ~ .fa-times {
+        display: none;
+      }
+    /*  */
+
+    .name-top {
         text-align: center;
     }
-    
+
+    .nav-items ul {
+        padding: 0;
+        margin-bottom: 5%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .nav-items li {
+        list-style-type: none;   
+    }
+
     .hello {
         text-align: center;
-        font-family: Arial, Helvetica, sans-serif;
+        background-color: black;
         color: white;
-        font-size: medium;
-        background-color:#C0B283;
-        width: 100%;
-        height: 20%;
-        padding: 5%;
-        margin: 0%;
+        padding: 10% 20%;
     }
 
     .skills {
-        padding: 1%;
-        background-color: #343A40;
-        color: white;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 1.2rem;
-        font-weight: bold;
-        border: none    ;
+        padding: 5% 11%;
+        background-color: #EDF7F6;
     }
 
     .skill-list {
-        width: 100%;
-        padding-bottom: 5%;
+        list-style-type: none;
+        padding: 0;
     }
 
     .skill {
-        list-style-type: none;
-        margin: 1%;
-    }
-
-    .hero {
-        margin: 0;
-        border: none;
+        margin-bottom: 2%;
     }
 
     .hero img {
         width: 100%;
         height: auto;
+        background-size: cover;
+        background-color: #EDF7F6;
     }
 
-    .footer {
-        background-color: #C0B283;
-        padding: 3%;
-        text-align: center;
-    }
-
-    i {
-        color: white;
-        margin: 0 2%;
-    }
-  }
-
-  @media (min-width: 768px) {
-
-    h1 {
-        font-size: 3rem;
-    }
-
-    h2 {
-        padding-top: 5%;
-        font-size: 2.2rem;
-        text-align: center;
-    }
-    
-    .hello {
-        text-align: center;
-        font-family: Arial, Helvetica, sans-serif;
-        color: white;
-        font-size: medium;
-        background-color:#C0B283;
-        width: 100%;
-        height: 20%;
-        padding: 5%;
-        margin: 0%;
-    }
-
-    .skills {
-        background-color: #343A40;
-        color: white;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 2rem;
-        border: none;
-        width: 50%;
-        display: inline-block;
-        text-align: start;
-        padding: 8.8% 0 8.7% 2%;
-    }
-
-    .skills h2 {
-        margin-bottom: 6%;
-        text-align: center;
-    }
-
-    .skill-list {
-        width: 80%;
-        display: inline-flex;
-    }
-
-    .skill {
-        list-style-type: none;
-        margin: 1%;
-    }
-
-    .hero {
-        width: 50%;
-        margin: 0;
-        border: none;
-        display: inline-block;
-        float: right;
-    }
-
-    .hero img {
+    .gallery {
+        padding-top: 10%;
         width: 100%;
         height: auto;
+        background-color: #EDF7F6;
     }
 
-    .card img {
-        width: 100%;
-        height: 99%;
-    }
-
-    .footer {
-        background-color: #C0B283;
+    .gallery-title {
         text-align: center;
     }
 
+    .gallery-images img {
+        width: 100%;
+        height: 280px;
+        background-size: cover;
+        padding: 0 15% 10% 15%;
+    }
+
+    .contact {
+        text-align: center;
+        width: 100%;
+        background-color: #EDF7F6;
+        padding: 5% 0 5% 0;
+    }
+
+    .form-group input {
+        border: 2px solid black;
+        border-radius: 4%;
+        width: 70%;
+        padding: 2%;
+        margin-bottom: 3%;
+    }
+
+    .form-group textarea {
+        border: 2px solid black;
+        border-radius: 4%;
+        width: 70%;
+        padding: 2%;
+        margin-bottom: 10%;
+    }
+
     i {
+        margin: 0 6.5%;
+    }
+
+    i:hover {
+        color: #5e4c14;
+    }
+
+    .footer{
+        width: 100%;
+        text-align: center;
+        background-color: #A28089;
+        padding: 2%;
+    }
+
+    .footer-text {
         color: white;
     }
-  }
+
+    .social-media-icons a {
+        color: black;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    body {
+        background-color: black;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    body {
+        background-color: gold;
+    }
+}
