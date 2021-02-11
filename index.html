@@ -12,23 +12,22 @@
     <title>My Portfolio</title>
   </head>
   <body>
-
+    <div class="respmenu">
+      <h1>Fabian Conejo</h1>
+      <input name="menu" type="checkbox">
+      <i class="fas fa-bars"></i>
+      <i class="fas fa-times"></i>
+      <nav>
+        <ul>
+          <a href="#hello"><li>About</li></a>
+          <a href="#gallery"><li>Projects</li></a>
+          <a href="#contact"><li>Contact</li></a>
+        </ul>
+      </nav>
+    </div>
     <nav>
       <div class="name-top">
         <h1>Fabian Conejo</h1>
-      </div>
-      <div class="respmenu">
-        <h1>Fabian Conejo</h1>
-        <input name="menu" type="checkbox">
-        <i class="fas fa-bars"></i>
-        <i class="fas fa-times"></i>
-        <nav>
-          <ul>
-            <a href="#hello"><li>About</li></a>
-            <a href="#gallery"><li>Projects</li></a>
-            <a href="#contact"><li>Contact</li></a>
-          </ul>
-        </nav>
       </div>
       <div class="nav-items">
         <ul>
@@ -42,7 +41,7 @@
         <h1>Hi there, I am Fabian Fullstack Developer</h1>
     </section> 
     <section class="skills">
-        <h2>Skills List</h2>
+        <h2>Skills Set</h2>
         <ul class="skill-list">
             <li class="skill">Node.js</li>
             <li class="skill">React.js</li>
@@ -58,15 +57,15 @@
         <h2>Projects</h2>
       </div>
       <div class="gallery-images">
-        <img src="project1.png" alt="">
-        <img src="project2.png" alt="">
-        <img src="project3.png" alt="">
+        <img class="img1">
+        <img class="img2">
+        <img class="img3">
       </div>
 
     </section>
     <section class="contact" id="contact">
       <h2>Contacto</h2>
-      <form>
+      <form class="form">
         <div class="form-group">
           <input type="text" id="name" name="name" value="Name">
         </div>
@@ -77,13 +76,15 @@
           <textarea id="message" name="message" rows="7" placeholder="Text message here..."></textarea >
         </div>
       </form>
-      <div class="social-media-title">
-        <h2>Find Me On</h2>
-      </div>
-      <div class="social-media-icons">
-        <a href="https://github.com/facose" target="_blank" rel="noopener noreferrer"><i class="fab fa-github-square fa-5x"></i></a>
-        <a href="https://www.linkedin.com/in/fabianconejosegura/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin fa-5x"></i></a>
-        <a href="https://www.instagram.com/fabianconejo/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram-square fa-5x"></i></a>
+      <div class="social-media">
+        <div class="social-media-title">
+          <h2>Find Me On</h2>
+        </div>
+        <div class="social-media-icons">
+          <a href="https://github.com/facose" target="_blank" rel="noopener noreferrer"><i class="fab fa-github-square fa-5x"></i></a>
+          <a href="https://www.linkedin.com/in/fabianconejosegura/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin fa-5x"></i></a>
+          <a href="https://www.instagram.com/fabianconejo/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram-square fa-5x"></i></a>
+        </div>
       </div>
     </section>
     <footer class="footer">

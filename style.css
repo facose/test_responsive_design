@@ -18,29 +18,13 @@ body {
 
 
 @media only screen and (min-width: 320px) {
-    nav {
-        background-color: #A28089;
-        padding-top: 0.001rem;
-        display: flex;
-        flex-direction: column;
-        color: white;
-    }
-
+    
     .name-top {
         display: none;
     }
 
     .nav-items {
         display: none;
-    }
-
-    nav a {
-        text-decoration: none;
-        color: white;
-    }
-
-    a:hover {
-        color: #F9F295;
     }
 
     /* sandwich button */
@@ -72,7 +56,7 @@ body {
         margin: 0;
         padding: 0;
         right: 0;
-        top: 22px;
+        top: 7px;
         width: 48px;
         height: 48px;  
       }
@@ -129,7 +113,7 @@ body {
         text-align: center;
         background-color: black;
         color: white;
-        padding: 10% 20%;
+        padding: 10% 25%;
     }
 
     .skills {
@@ -165,10 +149,34 @@ body {
     }
 
     .gallery-images img {
-        width: 100%;
-        height: 280px;
+        width: 70%;
+        margin-left: 15%;
+    }
+
+    .img1 {
+        background-image: url("project1.png");
         background-size: cover;
-        padding: 0 15% 10% 15%;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 15.2rem;
+        margin-bottom: 5%;
+    }
+
+    .img2 {
+        background-image: url("project2.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 15.2rem;
+        margin-bottom: 5%;
+    }
+
+    .img3 {
+        background-image: url("project3.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 15.2rem;
     }
 
     .contact {
@@ -219,13 +227,210 @@ body {
 }
 
 @media only screen and (min-width: 768px) {
-    body {
-        background-color: black;
+    
+    h2 {
+        font-size: 2rem;
+    }
+    
+    .respmenu {
+        display: none;
+    }
+
+    nav {
+        background-color: #A28089;
+        padding-top: 0.001rem;
+        display: flex;
+        flex-direction: row;
+        color: white;
+        align-items: baseline;
+        width: 100%;
+        position: fixed;
+    }
+
+    .name-top {
+        display: inline-flex;
+        padding-left: 5%;
+    }
+
+    .nav-items {
+        display: inline-flex;
+        margin-left: auto;
+        padding-right: 8%;
+        
+    }
+
+    nav a {
+        text-decoration: none;
+        color: white;
+        padding: 0 5%;
+        font-size: 1.2rem;
+    }
+
+    a:hover {
+        color: #F9F295;
+    }
+
+    .hello {
+        padding-top: 18%;
+    }
+
+    .hello h1 {
+        font-size: 3rem;
+    }
+
+    .skills{
+        font-style: oblique;
+    }
+
+    .skills h2 {
+        font-size: 2rem;
+    }
+
+    .skill-list {
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+
+    .gallery-images img {
+        width: 70%;
+        margin-left: 15%;
+    }
+
+    .img1 {
+        background-image: url("project1.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 25rem;
+        margin-bottom: 5%;
+    }
+
+    .img2 {
+        background-image: url("project2.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 25rem;
+        margin-bottom: 5%;
+    }
+
+    .img3 {
+        background-image: url("project3.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 25rem;
+    }
+
+    .contact {
+        padding-top: 10%;
     }
 }
 
 @media only screen and (min-width: 1024px) {
-    body {
-        background-color: gold;
+    
+    .skills {
+        display: inline-block;
+        width: 50%;
+        min-height: 480px;
+        max-height: 480px;
+    }
+    
+    .skills h2 {
+        font-size: 2.3rem;
+        padding-left: 20%;
+        padding-right: 0;
+    }
+
+    .skill-list {
+        font-size: 1.6rem;
+        font-weight: 500;
+        padding-left: 20%;
+        padding-right: 0;
+    }
+
+    .hero {
+        width: 50%;
+        float: right;
+        min-height: 480px;
+        max-height: 480px;
+        background-image: url("me_myself_I.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .hero img {
+        display: none;
+    }
+
+    .gallery {
+        background-color: #FFA8B6;
+        width: 100%;
+        height: auto;
+        padding-top: 5%;
+    }
+
+    .gallery h2 {
+        padding-bottom: 5%;
+    }
+
+    .gallery-images {
+        display: flex;
+
+    }
+
+    .gallery-images img {
+        margin: 0;
+        padding: 0;
+        width: 30%;
+        height: 320px;
+        margin: 0 1.7% 10% 1.7%;
+    }
+
+    .img1 {
+        background-image: url("project1.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .img2 {
+        background-image: url("project2.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .img3 {
+        background-image: url("project3.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .contact {
+        width: 100%;
+        padding-top: 5%;
+    }
+
+    .contact h2 {
+        padding-bottom: 5%;
+    }
+
+    .form {
+        width: 50%;
+        display: inline-block;
+    }
+
+    .social-media {
+        width: 50%;
+        float: right;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .social-media-title {
+        display: none;
+    }
+
+    .social-media-icons {
+        padding-top: 12.5%;
     }
 }
