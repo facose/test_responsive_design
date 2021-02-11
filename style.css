@@ -149,15 +149,15 @@ body {
     }
 
     .gallery-images img {
-        width: 70%;
-        margin-left: 15%;
+        
     }
 
     .img1 {
         background-image: url("project1.png");
         background-size: cover;
         background-repeat: no-repeat;
-        width: 100%;
+        width: 70%;
+        margin-left: 15%;
         height: 15.2rem;
         margin-bottom: 5%;
     }
@@ -166,7 +166,8 @@ body {
         background-image: url("project2.png");
         background-size: cover;
         background-repeat: no-repeat;
-        width: 100%;
+        width: 70%;
+        margin-left: 15%;
         height: 15.2rem;
         margin-bottom: 5%;
     }
@@ -175,7 +176,8 @@ body {
         background-image: url("project3.png");
         background-size: cover;
         background-repeat: no-repeat;
-        width: 100%;
+        width: 70%;
+        margin-left: 15%;
         height: 15.2rem;
     }
 
@@ -291,35 +293,33 @@ body {
         font-weight: 500;
     }
 
-    .gallery-images img {
+    .img1 {
+        background-image: url("project1.png");
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 25rem;
+        margin-bottom: 5%;
         width: 70%;
         margin-left: 15%;
     }
 
-    .img1 {
-        background-image: url("project1.png");
-        background-size: cover;
-        background-repeat: no-repeat;
-        width: 100%;
-        height: 25rem;
-        margin-bottom: 5%;
-    }
-
     .img2 {
         background-image: url("project2.png");
-        background-size: cover;
         background-repeat: no-repeat;
         width: 100%;
         height: 25rem;
         margin-bottom: 5%;
+        width: 70%;
+        margin-left: 15%;
     }
 
     .img3 {
         background-image: url("project3.png");
-        background-size: cover;
         background-repeat: no-repeat;
         width: 100%;
         height: 25rem;
+        width: 70%;
+        margin-left: 15%;
     }
 
     .contact {
@@ -376,33 +376,30 @@ body {
 
     .gallery-images {
         display: flex;
-
-    }
-
-    .gallery-images img {
-        margin: 0;
-        padding: 0;
-        width: 30%;
-        height: 320px;
-        margin: 0 1.7% 10% 1.7%;
+        margin: 0 0 0 5%;
+        padding: 0 0 10% 0;
+        width: 90%;
     }
 
     .img1 {
         background-image: url("project1.png");
+        margin: 0 5% 0 0;
         background-size: contain;
-        background-repeat: no-repeat;
+        max-height: 250px;
     }
 
     .img2 {
         background-image: url("project2.png");
+        margin: 0;
         background-size: contain;
-        background-repeat: no-repeat;
+        max-height: 250px;
     }
 
     .img3 {
         background-image: url("project3.png");
+        margin: 0 0 0 5%;
         background-size: contain;
-        background-repeat: no-repeat;
+        max-height: 250px;
     }
 
     .contact {
