@@ -72,13 +72,13 @@ body {
         margin: 0;
         padding: 0;
         right: 0;
-        top: 10px;
+        top: 22px;
         width: 48px;
         height: 48px;  
       }
        
       .respmenu .fa-bars, .respmenu .fa-times {
-        font-size: 48px;
+        font-size: 28px;
         pointer-events: none;
       }
        
